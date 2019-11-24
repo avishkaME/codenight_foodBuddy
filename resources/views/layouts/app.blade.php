@@ -85,7 +85,7 @@
                         <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-store"></i> Shops</a>
+                        <a class="nav-link" href="/shop"><i class="fas fa-store"></i> Shops</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#"><i class="fas fa-utensils"></i> Food items</a>
@@ -133,8 +133,22 @@
         </nav>
 
         <main class="py-4">
-            @yield('content')
+            <div class="container">
+                @yield('content')
+            </div>
+            
         </main>
     </div>
 </body>
+<footer class="footer mt-auto py-3 my-3 navbar-fixed-bottom">
+    <div class="container text-center">
+        <span class="text-muted text-center">Allrights recieved!. &copy;foodBuddy |2019</span>
+    </div>
+    <div class="d-flex justify-content-center py-2">
+        <a class="pr-4" href="#"><i class="fab fa-facebook"></i></a>
+        <a class="pr-4" href="#"><i class="fab fa-twitter"></i></a>
+        <a class="pr-4" href="#"><i class="fab fa-instagram"></i></a>
+        <a class="pr-4" href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+</footer>
 </html>
